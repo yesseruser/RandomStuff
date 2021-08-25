@@ -47,6 +47,8 @@ namespace RandomStuff
         /// The energy itself.
         /// </summary>
         protected double energy;
+
+        public static int personCount;
         
         /// <summary>
         /// Saturation points. Use the <code>consume()</code> function to saturate.
@@ -291,7 +293,7 @@ namespace RandomStuff
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="gender">The gender.</param>
-        public Person(string name, Gender gender)
+        public Person(string name, Gender gender, bool count = true)
         {
             this.name = name;
             this.gender = gender;
@@ -301,6 +303,10 @@ namespace RandomStuff
             NeedToGoOnTheToilet = 0;
             Energy = 100;
             age = 0;
+            if (count)
+            {
+                personCount++;
+            }
         }
     }
 }
