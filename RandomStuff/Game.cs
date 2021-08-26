@@ -11,10 +11,12 @@ namespace RandomStuff
         /// The name of the game.
         /// </summary>
         public string name;
+        
         /// <summary>
         /// The fun itself.
         /// </summary>
         protected double fun;
+        
         /// <summary>
         /// Used to determine how fun is the game.
         /// </summary>
