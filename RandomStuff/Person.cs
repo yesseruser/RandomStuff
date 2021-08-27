@@ -49,7 +49,7 @@ namespace RandomStuff
         protected double energy;
 
         public static int personCount;
-        
+
         /// <summary>
         /// Saturation points. Use the <code>consume()</code> function to saturate.
         /// </summary>
@@ -251,7 +251,7 @@ namespace RandomStuff
             {
                 needToGoOnTheToilet -= howMuch;
             }
-            
+
             if (announce)
             {
                 Console.WriteLine($"{name} used the toilet.");
@@ -279,7 +279,7 @@ namespace RandomStuff
             NeedToGoOnTheToilet += (HowLong * 3);
             Energy -= HowLong;
         }
-        
+
         /// <summary>
         /// Prints info to the console.
         /// </summary>
