@@ -11,10 +11,12 @@ namespace RandomStuff
         /// The age. Changeable.
         /// </summary>
         public double age;
+        
         /// <summary>
         /// The name. Changeable.
         /// </summary>
         public string name;
+        
         /// <summary>
         /// Favourite food. Does literraly nothing, but you can do something with it.
         /// </summary>
@@ -23,26 +25,32 @@ namespace RandomStuff
         /// Disliked food. Does literraly nothing, but you can do something with it.
         /// </summary>
         public string[] dislikedFood;
+        
         /// <summary>
         /// The gender.
         /// </summary>
         public Gender gender;
+        
         /// <summary>
         /// The saturation itself.
         /// </summary>
         protected double saturatation;
+        
         /// <summary>
         /// The hydration itself.
         /// </summary>
         protected double hydration;
+        
         /// <summary>
         /// The fun itself.
         /// </summary>
         protected double fun;
+        
         /// <summary>
         /// The need to go on the toilet itself.
         /// </summary>
         protected double needToGoOnTheToilet;
+        
         /// <summary>
         /// The energy itself.
         /// </summary>

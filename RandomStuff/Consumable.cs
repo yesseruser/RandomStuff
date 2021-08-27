@@ -11,22 +11,27 @@ namespace RandomStuff
         /// The type of the consumable itself.
         /// </summary>
         protected string type;
+        
         /// <summary>
         /// The saturation itself.
         /// </summary>
         protected double saturation;
+        
         /// <summary>
         /// The hydration itself.
         /// </summary>
         protected double hydration;
+        
         /// <summary>
         /// The energy itself.
         /// </summary>
         protected double energy;
+        
         /// <summary>
         /// The name of the consumable.
         /// </summary>
         public string name;
+        
         /// <summary>
         /// Used to determine if the consumable is food or a drink.
         /// </summary>
