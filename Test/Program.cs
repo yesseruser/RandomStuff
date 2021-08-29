@@ -2,9 +2,9 @@
 
 namespace Test
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Person testGuy = new Person("Doesn'tknow Hisname", new Gender(true));
             testGuy.PrintInfo();
