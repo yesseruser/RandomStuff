@@ -182,32 +182,10 @@ namespace RandomStuff
         {
             string msg;
 
-            if (consumedThing.Saturation + saturatation > 100)
-            {
-                saturatation = 100;
-            }
-            else
-            {
-                saturatation += consumedThing.Saturation;
-            }
+            Saturation += consumedThing.Saturation;
+            Hydration += consumedThing.Hydration;
+            Energy += consumedThing.Energy;
 
-            if (consumedThing.Hydration + hydration > 100)
-            {
-                hydration = 100;
-            }
-            else
-            {
-                hydration += consumedThing.Hydration;
-            }
-
-            if (consumedThing.Energy + energy > 100)
-            {
-                energy = 100;
-            }
-            else
-            {
-                energy += consumedThing.Energy;
-            }
             if (announce)
             {
                 if (consumedThing.IsFood)
