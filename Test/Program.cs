@@ -1,4 +1,5 @@
 ﻿using RandomStuff;
+using System;
 
 namespace Test
 {
@@ -13,6 +14,7 @@ namespace Test
             Consumable SuperFood = new(true, "Super Food", 100, 100, 100);
             testGuy.Consume(SuperFood, true);
             testGuy.PrintInfo();
+            Console.ReadKey();
         }
     }
 }
