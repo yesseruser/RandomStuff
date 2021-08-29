@@ -278,7 +278,7 @@ namespace RandomStuff
         /// Passes time. Lowers needs and adds age by the time. (NeedToGoOnTheToilet is highered.)
         /// </summary>
         /// <param name="HowLong">The time. Fun is lowered by HowLong × 2 and NeedToGoOnTheToiled is highered by HowLong × 3.</param>
-        virtual public void TimePass(double HowLong)
+        virtual public void TimePass(double HowLong, bool announce = true)
         {
             age += HowLong;
             Saturation -= HowLong;
@@ -286,6 +286,10 @@ namespace RandomStuff
             Fun -= (HowLong * 2);
             NeedToGoOnTheToilet += (HowLong * 3);
             Energy -= HowLong;
+            if (announce)
+            {
+                Console.WriteLine($"Time passed for {name} by {HowLong}.");
+            }
         }
 
         /// <summary>
