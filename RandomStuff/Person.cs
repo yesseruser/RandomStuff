@@ -278,6 +278,7 @@ namespace RandomStuff
         /// Passes time. Lowers needs and adds age by the time. (NeedToGoOnTheToilet is highered.)
         /// </summary>
         /// <param name="HowLong">The time. Fun is lowered by HowLong × 2 and NeedToGoOnTheToiled is highered by HowLong × 3.</param>
+        /// <param name="announce">By default set to true, determines if using the time pass will be announced to the console.</param>
         virtual public void TimePass(double HowLong, bool announce = true)
         {
             age += HowLong;
