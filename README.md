@@ -1,7 +1,7 @@
 # RandomStuff
 
 The RandomStuff .NET library  
-How to use in Visual Studio:  
+How to use in Visual Studio 2019:  
 1. Navigate to your project.  
 2. Right-click on your project and select 'Add'
 3. Click 'Project reference'.
