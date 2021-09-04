@@ -207,14 +207,7 @@ namespace RandomStuff
         /// <param name="announce">By default set to false, determines if the playing will be announced to the console.</param>
         virtual public void Play(Game game, bool announce = false)
         {
-            if (game.Fun + fun > 100)
-            {
-                fun = 100;
-            }
-            else
-            {
-                fun += game.Fun;
-            }
+            Fun = game.Fun;
 
             if (announce)
             {
