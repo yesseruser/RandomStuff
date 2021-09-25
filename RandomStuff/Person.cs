@@ -17,6 +17,9 @@ namespace RandomStuff
         /// </summary>
         public string name;
 
+        /// <summary>
+        /// The money of the person.
+        /// </summary>
         public Money wealth;
         
         /// <summary>
@@ -279,6 +282,8 @@ namespace RandomStuff
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="gender">The gender.</param>
+        /// <param name="money">The money.</param>
+        /// <param name="count">Determines if the person will be counted. True by default.</param>
         public Person(string name, Gender gender, Money money, bool count = true)
         {
             this.name = name;
