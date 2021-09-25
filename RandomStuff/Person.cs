@@ -16,6 +16,8 @@ namespace RandomStuff
         /// The name. Changeable.
         /// </summary>
         public string name;
+
+        public Money wealth;
         
         /// <summary>
         /// Favourite food. Does literraly nothing, but you can do something with it.
@@ -277,7 +279,7 @@ namespace RandomStuff
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="gender">The gender.</param>
-        public Person(string name, Gender gender, bool count = true)
+        public Person(string name, Gender gender, Money money, bool count = true)
         {
             this.name = name;
             this.gender = gender;
@@ -287,6 +289,7 @@ namespace RandomStuff
             NeedToGoOnTheToilet = 0;
             Energy = 100;
             age = 0;
+            wealth = money;
             if (count)
             {
                 personCount++;
